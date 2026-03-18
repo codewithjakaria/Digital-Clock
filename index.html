@@ -4,25 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Digital Clock</title>
+  <title>Pro Digital Clock</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="dark-theme" id="body-theme">
 
-  <div class="container">
-    <h1 class="title">Digital Clock</h1>
-
-    <div class="clock-container">
-      <div id="clock">00:00:00</div>
-      <div id="ampm">AM</div>
-    </div>
-
-    <div id="date">Monday, Jan 1, 2026</div>
-
-    <p class="footer">Designed by Jakaria 👨‍💻</p>
+  <div class="theme-toggle-container">
+    <button id="theme-btn">☀️ / 🌙</button>
   </div>
 
+<div class="container">
+  <div class="border-glow"></div>
+  <h1 class="title">Smart Digital Clock</h1>
+
+  <div class="clock-wrapper">
+    <div class="time-box">
+      <span id="hours">00</span>
+      <p>Hours</p>
+    </div>
+    <div class="colon">:</div>
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <p>Minutes</p>
+    </div>
+    <div class="colon">:</div>
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <p>Seconds</p>
+    </div>
+    <div class="ampm-box">
+      <span id="ampm">AM</span>
+    </div>
+  </div>
+
+  <div id="date" class="date-display"></div>
+  <p class="footer">Designed by <span>Jakaria</span> 🚀</p>
+</div>
   <script src="script.js"></script>
 </body>
 
